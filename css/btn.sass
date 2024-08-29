@@ -1,0 +1,141 @@
+.nlpiBtn
+    border-radius: 99rem
+    background: #FF6116
+    color: #ffffff
+    font-size: 14px
+    padding: 10px 15px
+    min-width: 100px
+    &:hover
+        background: #d54706
+        color: #ffffff
+    &.nlpiBtnGray
+        background: #858585
+        &:hover
+            background: #a3a3a3
+    &.nlpiBtnLine
+        background: rgb(255 255 255 / 96%)
+        color: #FF6116
+        border: 1px solid #FF6116
+        -webkit-backdrop-filter: blur(5px)
+        backdrop-filter: blur(10px)
+        &:hover
+            background: #FF6116
+            color: #ffffff
+
+.nlppage-link
+    background: #ffffff
+    color: #FF6116
+    border-radius: 99rem
+    border: 1px solid #FF6116
+    margin: 0 6px
+    width: 38px
+    text-align: center
+    &:hover
+        background: #FF6116
+        color: #ffffff
+
+.page-item
+    &.active
+        .nlppage-link
+            background: #c74a10
+            color: #ffffff
+            border-color: #c74a10
+
+.nlppage-next
+    background: #FF6116
+    color: #ffffff
+    border-radius: 10px !important
+    border: 1px solid #FF6116
+    margin: 0 6px
+    width: 38px
+    height: 38px
+    &:hover
+        color: #FF6116
+
+.nlppage-page
+    background: #FF6116
+    color: #ffffff
+    border-radius: 10px !important
+    border: 1px solid #FF6116
+    margin: 0 6px
+    width: fit-content
+    height: 38px
+    &:hover
+        color: #FF6116
+
+[data-bs-theme="dark"]
+    .nlppage-link
+        background: #1a1a1a07
+
+[data-bs-theme="dark"]
+    .breadcrumb-item
+        &.active
+            color: #d6d6d6
+
+    .nlpiBtn
+        &.nlpiBtnLine
+            background: transparent
+            color: #FF6116
+            border: 1px solid #FF6116
+            -webkit-backdrop-filter: blur(5px)
+            backdrop-filter: blur(10px)
+            &:hover
+                background: #FF6116
+                color: #ffffff
+
+.nlpiAccordion
+    min-height: 600px
+    padding: 50px 0
+    border-top: 1px solid #FF6116
+    .accordion-item
+        &:first-child
+            border-radius: 15px 15px 0 0
+            .accordion-button
+                border-radius: 15px 15px 0 0
+        &:last-child
+            border-radius: 0 0 15px 15px
+            .accordion-button
+                border-radius: 0 0 15px 15px
+            .accordion-button:not(.collapsed)
+                border-radius: 0
+    .accordion-button
+        box-shadow: none
+        line-height: 40px
+        font-weight: 700
+        .textQ
+            color: #FF6116
+            font-size: 32px
+            margin-right: 20px
+            line-height: 40px
+    .accordion-button:not(.collapsed)
+        background: #FF6116
+        color: #ffffff !important
+        box-shadow: none
+        &:after
+            background-image: url("../img/icon/down.svg")
+            transform: rotate(0deg)
+        .textQ
+            color: #ffffff
+    .accordion-body
+        line-height: 45px
+        display: flex
+        align-items: center
+        @media screen and ( max-width: 768px )
+            align-items: start
+            line-height: 30px
+        .textA
+            font-size: 30px
+            margin-right: 15px
+            margin-left: 20px
+            color: #585858d4
+
+[data-bs-theme="dark"]
+    .accordion-item
+        background: #000
+        .accordion-body
+            color: #a6a6a6
+            .textA
+                font-size: 30px
+                margin-right: 15px
+                margin-left: 20px
+                color: #585858ed

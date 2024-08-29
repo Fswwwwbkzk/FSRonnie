@@ -1,0 +1,168 @@
+.footer
+    background: #F8F8F8
+    padding: 45px 0 30px 0
+    border-radius: 20px 20px 0 0
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px
+    .footerLogo
+        width: 200px
+        height: 40px
+        .footerLogo-brand
+            position: relative
+            .navLogoW
+                position: absolute
+                top: 0
+                left: 0
+                width: 200px
+                height: auto
+                display: none
+            .navLogoB
+                position: absolute
+                top: 0
+                left: 0
+                width: 200px
+                height: auto
+                display: block
+
+    .fooerSocial
+        .socialItem
+            width: 40px
+            height: 40px
+            margin-right: 15px
+            &:last-child
+                margin-right: 0
+            &:hover
+                .socialItemImgBox
+                    .socialItemImgH
+                        opacity: 1
+            .socialItemImgBox
+                width: 100%
+                height: 100%
+                display: block
+                position: relative
+                .socialItemImg,.socialItemImgH
+                    position: absolute
+                    top: 0
+                    left: 0
+                    width: 100%
+                    height: 100%
+                    object-fit: cover
+                .socialItemImgH
+                    opacity: 0
+                    transition: .5s
+
+    .footerLinkBox
+        border-top: 1px solid #D3D3D3
+        border-bottom: 1px solid #D3D3D3
+        padding: 15px 0
+        margin: 40px 0 5px
+        .footerLink
+            width: 20%
+            display: block
+            @media screen and ( max-width: 768px )
+                width: 50%
+                display: block
+                margin-bottom: 15px
+                text-align: center
+            a
+                text-decoration: none
+                color: #333333
+                &:hover
+                    color: #585858
+                    font-weight: 600
+        .footerLocation
+            width: 20%
+            display: block
+            position: relative
+            @media screen and ( max-width: 768px )
+                width: 50%
+                display: block
+                margin-bottom: 15px
+                text-align: center
+            &:first-child
+                position: relative
+                &::after
+                    content: ''
+                    position: absolute
+                    top: 50%
+                    left: -40%
+                    transform: translateY(-50%)
+                    width: 1px
+                    height: 100%
+                    background: #FF6116
+            a
+                text-decoration: none
+                color: #FF6116
+                &:hover
+                    color: #ea3d15
+                    font-weight: 600
+
+.copyRight
+    background: #F8F8F8
+    border-top: 1px solid #ececec
+    padding: 20px 0
+    .elementorBox
+        list-style: none
+        display: flex
+        margin-bottom: 0px
+        flex-direction: row
+        @media screen and ( max-width: 768px )
+            flex-direction: column
+            padding-left: 0
+        .elementor
+            margin-right: 24px
+            position: relative
+            @media screen and ( max-width: 768px )
+                margin: 5px 0
+                &::after
+                    display: none
+            &::after
+                content: ""
+                width: 1px
+                height: 16px
+                background: #232527
+                position: absolute
+                top: 50%
+                right: -12px
+                transform: translateY(-50%)
+            &:last-child
+                margin-right: 0
+                &::after
+                    display: none
+            a
+                text-decoration: none
+                color: #3E4142
+                &:hover
+                    color: #676767
+
+[data-bs-theme="dark"]
+    .footer
+        background: #121212
+        .footerLogo
+            .footerLogo-brand
+                .navLogoW
+                    display: block
+                .navLogoB
+                    display: none
+    .footerLinkBox
+        border-top: 1px solid #333333
+        border-bottom: 1px solid #333333
+        .footerLink
+            a
+                color: #ffffff
+                &:hover
+                    color: #959595
+                    font-weight: 600
+
+    .copyRight
+        background: #121212
+        border-top: 1px solid #212121
+        .elementorBox
+            .elementor
+                &::after
+                    background: #515151
+                a
+                    text-decoration: none
+                    color: #ffffff
+                    &:hover
+                        color: #959595
+                        font-weight: 600

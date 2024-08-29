@@ -1,0 +1,16 @@
+/* @font-face {
+    font-family: 'Everett';
+    src: url('../font/Everett-Regular-web.woff') format("woff");
+} */
+@font-face {
+    font-family: 'Abolition';
+    src: url('../font/AbolitionTest-Regular.otf') format("opentype");
+}
+/* @font-face {
+    font-family: 'JhengHei';
+    src: local("Microsoft JhengHei"), url('../font/AbolitionTest-Regular.otf') format('opentype');
+} */
+@font-face {
+    font-family: 'JhengHei-Bold';
+    src: local("Microsoft JhengHei"), url('../font/Microsoft-JhengHei-Bold.ttf') format('opentype');
+}

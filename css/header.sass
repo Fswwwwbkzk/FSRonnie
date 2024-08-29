@@ -1,0 +1,31 @@
+.navbar-expand-lg
+    @media screen and (min-width: 1450px)
+        display: flex
+        flex-wrap: nowrap
+    @media screen and (max-width: 1449.98px)
+        display: flex
+        flex-wrap: wrap
+        align-items: center
+        justify-content: space-between
+    .navbar-collapse
+        @media screen and (min-width: 1450px)
+            display: flex !important
+        @media screen and (max-width: 1449.98px)
+            display: none !important
+            flex-basis: 100%
+            flex-grow: 1
+        &.show
+            @media screen and (max-width: 1449.98px)
+                display: block !important
+    .navbar-toggler
+        @media screen and (min-width: 1450px)
+            display: none
+        @media screen and (max-width: 1449.98px)
+            display: block
+
+    .navbar-nav 
+        .dropdown-menu
+            @media screen and (min-width: 1450px)
+                position: absolute
+            @media screen and (max-width: 1449.98px)
+                position: static

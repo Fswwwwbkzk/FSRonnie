@@ -1,0 +1,208 @@
+.footer {
+  background: #F8F8F8;
+  padding: 45px 0 30px 0;
+  border-radius: 20px 20px 0 0;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+}
+.footer .footerLogo {
+  width: 200px;
+  height: 40px;
+}
+.footer .footerLogo .footerLogo-brand {
+  position: relative;
+}
+.footer .footerLogo .footerLogo-brand .navLogoW {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: auto;
+  display: none;
+}
+.footer .footerLogo .footerLogo-brand .navLogoB {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: auto;
+  display: block;
+}
+.footer .fooerSocial .socialItem {
+  width: 40px;
+  height: 40px;
+  margin-right: 15px;
+}
+.footer .fooerSocial .socialItem:last-child {
+  margin-right: 0;
+}
+.footer .fooerSocial .socialItem:hover .socialItemImgBox .socialItemImgH {
+  opacity: 1;
+}
+.footer .fooerSocial .socialItem .socialItemImgBox {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: relative;
+}
+.footer .fooerSocial .socialItem .socialItemImgBox .socialItemImg, .footer .fooerSocial .socialItem .socialItemImgBox .socialItemImgH {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.footer .fooerSocial .socialItem .socialItemImgBox .socialItemImgH {
+  opacity: 0;
+  transition: 0.5s;
+}
+.footer .footerLinkBox {
+  border-top: 1px solid #D3D3D3;
+  border-bottom: 1px solid #D3D3D3;
+  padding: 15px 0;
+  margin: 40px 0 5px;
+}
+.footer .footerLinkBox .footerLink {
+  width: 20%;
+  display: block;
+}
+@media screen and (max-width: 768px) {
+  .footer .footerLinkBox .footerLink {
+    width: 50%;
+    display: block;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+}
+.footer .footerLinkBox .footerLink a {
+  text-decoration: none;
+  color: #333333;
+}
+.footer .footerLinkBox .footerLink a:hover {
+  color: #585858;
+  font-weight: 600;
+}
+.footer .footerLinkBox .footerLocation {
+  width: 20%;
+  display: block;
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  .footer .footerLinkBox .footerLocation {
+    width: 50%;
+    display: block;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+}
+.footer .footerLinkBox .footerLocation:first-child {
+  position: relative;
+}
+.footer .footerLinkBox .footerLocation:first-child::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -40%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 100%;
+  background: #FF6116;
+}
+.footer .footerLinkBox .footerLocation a {
+  text-decoration: none;
+  color: #FF6116;
+}
+.footer .footerLinkBox .footerLocation a:hover {
+  color: #ea3d15;
+  font-weight: 600;
+}
+
+.copyRight {
+  background: #F8F8F8;
+  border-top: 1px solid #ececec;
+  padding: 20px 0;
+}
+.copyRight .elementorBox {
+  list-style: none;
+  display: flex;
+  margin-bottom: 0px;
+  flex-direction: row;
+}
+@media screen and (max-width: 768px) {
+  .copyRight .elementorBox {
+    flex-direction: column;
+    padding-left: 0;
+  }
+}
+.copyRight .elementorBox .elementor {
+  margin-right: 24px;
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  .copyRight .elementorBox .elementor {
+    margin: 5px 0;
+  }
+  .copyRight .elementorBox .elementor::after {
+    display: none;
+  }
+}
+.copyRight .elementorBox .elementor::after {
+  content: "";
+  width: 1px;
+  height: 16px;
+  background: #232527;
+  position: absolute;
+  top: 50%;
+  right: -12px;
+  transform: translateY(-50%);
+}
+.copyRight .elementorBox .elementor:last-child {
+  margin-right: 0;
+}
+.copyRight .elementorBox .elementor:last-child::after {
+  display: none;
+}
+.copyRight .elementorBox .elementor a {
+  text-decoration: none;
+  color: #3E4142;
+}
+.copyRight .elementorBox .elementor a:hover {
+  color: #676767;
+}
+
+[data-bs-theme=dark] .footer {
+  background: #121212;
+}
+[data-bs-theme=dark] .footer .footerLogo .footerLogo-brand .navLogoW {
+  display: block;
+}
+[data-bs-theme=dark] .footer .footerLogo .footerLogo-brand .navLogoB {
+  display: none;
+}
+[data-bs-theme=dark] .footerLinkBox {
+  border-top: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+}
+[data-bs-theme=dark] .footerLinkBox .footerLink a {
+  color: #ffffff;
+}
+[data-bs-theme=dark] .footerLinkBox .footerLink a:hover {
+  color: #959595;
+  font-weight: 600;
+}
+[data-bs-theme=dark] .copyRight {
+  background: #121212;
+  border-top: 1px solid #212121;
+}
+[data-bs-theme=dark] .copyRight .elementorBox .elementor::after {
+  background: #515151;
+}
+[data-bs-theme=dark] .copyRight .elementorBox .elementor a {
+  text-decoration: none;
+  color: #ffffff;
+}
+[data-bs-theme=dark] .copyRight .elementorBox .elementor a:hover {
+  color: #959595;
+  font-weight: 600;
+}/*# sourceMappingURL=footer.css.map */
