@@ -52,6 +52,16 @@ body ::selection {
   color: #ffffff;
 }
 
+.fsLink {
+  color: #333333;
+  background: #ffffff;
+  transition: 0.5s;
+}
+.fsLink:hover {
+  color: #333333;
+  background: #4EF63F;
+}
+
 .introBox {
   padding-top: 20rem;
   background: #fbfbfb;
