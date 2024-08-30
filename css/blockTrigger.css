@@ -1,0 +1,83 @@
+.blocks-container {
+  position: absolute;
+  width: 100%;
+  height: 300px;
+}
+.blocks-container.top {
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.blocks-container.top .blocks-row .block {
+  opacity: 1;
+}
+.blocks-container.bottom {
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.blocks-container.bottom .blocks-row .block {
+  opacity: 0;
+}
+
+.blocks-row {
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
+  display: flex;
+}
+
+.block {
+  width: 100%;
+  height: 100%;
+  transition: opacity 100ms;
+}
+
+#fsBlock1 {
+  background: #ffffff;
+}
+#fsBlock1 .block {
+  background: #fbfbfb;
+}
+
+#fsBlock2 {
+  background: #ffffff;
+}
+#fsBlock2 .block {
+  background: #fbfbfb;
+}
+
+#fsBlock3 {
+  background: #090909;
+}
+#fsBlock3 .block {
+  background: #fbfbfb;
+}
+
+#fsBlock4 {
+  background: #ffffff;
+}
+#fsBlock4 .block {
+  background: #fbfbfb;
+}
+
+#fsBlock5 {
+  background: #ffffff;
+}
+#fsBlock5 .block {
+  background: #fbfbfb;
+}
+
+#fsBlock6 {
+  background: #ffffff;
+}
+#fsBlock6 .block {
+  background: #fbfbfb;
+}
+
+#fsBlock7 {
+  background: #090909;
+}
+#fsBlock7 .block {
+  background: #fbfbfb;
+}/*# sourceMappingURL=blockTrigger.css.map */

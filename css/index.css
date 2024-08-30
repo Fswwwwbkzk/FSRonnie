@@ -21,7 +21,8 @@ body ::selection {
   z-index: 1000;
 }
 .fsHeader #navBar .fsLogo {
-  width: 450px;
+  max-width: 200px;
+  width: 100%;
 }
 
 .fsFooter {
@@ -38,21 +39,44 @@ body ::selection {
   max-width: 1000px;
   margin: 0 auto;
 }
-.fsContainer .projectBox {
-  margin-top: 20rem;
+
+.fsSpaceBlock {
+  padding: 20rem 0;
 }
-.fsContainer .projectBox .projectImgBox {
+
+.fsSpaceBlockSmall {
+  padding-top: 20rem;
+}
+
+.fsColor {
+  color: #ffffff;
+}
+
+.introBox {
+  padding-top: 20rem;
+  background: #fbfbfb;
+}
+
+.projectBox {
+  position: relative;
+  margin: 0;
+}
+.projectBox .projectTitleBox {
+  z-index: 300;
+}
+.projectBox .projectImgBox {
   width: 100%;
   display: block;
-  margin: 2.5rem auto;
+  margin: 2.5rem auto 0;
+  z-index: 300;
 }
-.fsContainer .projectBox .projectImgBox .projectImg {
+.projectBox .projectImgBox .projectImg {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.fsContainer .projectBox .projectVideoBox {
+.projectBox .projectVideoBox {
   border-radius: 20px;
   width: 100%;
   margin: 2.5rem auto;
@@ -64,13 +88,13 @@ body ::selection {
   overflow: hidden;
   position: relative;
 }
-.fsContainer .projectBox .projectVideoBox .projectVideo {
+.projectBox .projectVideoBox .projectVideo {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.fsContainer .projectBox .projectVideoBox .icon3D {
+.projectBox .projectVideoBox .icon3D {
   position: absolute;
   top: 30px;
   right: 30px;
@@ -81,7 +105,7 @@ body ::selection {
   -webkit-backdrop-filter: blur(2px);
           backdrop-filter: blur(2px);
 }
-.fsContainer .projectBox .projectVideoBox .icon3D p {
+.projectBox .projectVideoBox .icon3D p {
   line-height: 22px;
   color: #ffffff;
   font-size: 16px;

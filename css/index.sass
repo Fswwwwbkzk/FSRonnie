@@ -14,7 +14,9 @@ body
         mix-blend-mode: difference
         z-index: 1000
         .fsLogo
-            width: 450px
+            max-width: 200px
+            width: 100%
+
 
 .fsFooter
     position: fixed
@@ -27,45 +29,63 @@ body
 .fsContainer
     max-width: 1000px
     margin: 0 auto
-    .projectBox
-        margin-top: 20rem
-        // .projectTitleBox
-        //     .projectTitle
 
-        .projectImgBox
-            width: 100%
-            display: block
-            margin: 2.5rem auto
-            .projectImg
-                width: 100%
-                height: 100%
-                object-fit: cover
+.fsSpaceBlock
+    padding: 20rem 0
 
-        .projectVideoBox
-            border-radius: 20px
+.fsSpaceBlockSmall
+    padding-top: 20rem
+
+.fsColor
+    color: #ffffff
+
+.introBox
+    padding-top: 20rem
+    background: #fbfbfb
+
+.projectBox
+    position: relative
+    margin: 0
+    // padding: 20rem 0
+    .projectTitleBox
+        z-index: 300
+        // .projectTitle
+
+    .projectImgBox
+        width: 100%
+        display: block
+        margin: 2.5rem auto 0
+        z-index: 300
+        .projectImg
             width: 100%
-            margin: 2.5rem auto
-            aspect-ratio: 2310/1445
-            background: #000
-            display: flex
-            justify-content: center
-            align-items: center
-            overflow: hidden
-            position: relative
-            .projectVideo
-                width: 100%
-                height: 100%
-                object-fit: cover
-            .icon3D
-                position: absolute
-                top: 30px
-                right: 30px
-                background: rgb(255 255 255 / 16%)
-                padding: 10px 15px
-                border-radius: 99rem
-                mix-blend-mode: difference
-                backdrop-filter: blur(2px)
-                p
-                    line-height: 22px
-                    color: #ffffff
-                    font-size: 16px
+            height: 100%
+            object-fit: cover
+
+    .projectVideoBox
+        border-radius: 20px
+        width: 100%
+        margin: 2.5rem auto
+        aspect-ratio: 2310/1445
+        background: #000
+        display: flex
+        justify-content: center
+        align-items: center
+        overflow: hidden
+        position: relative
+        .projectVideo
+            width: 100%
+            height: 100%
+            object-fit: cover
+        .icon3D
+            position: absolute
+            top: 30px
+            right: 30px
+            background: rgb(255 255 255 / 16%)
+            padding: 10px 15px
+            border-radius: 99rem
+            mix-blend-mode: difference
+            backdrop-filter: blur(2px)
+            p
+                line-height: 22px
+                color: #ffffff
+                font-size: 16px
