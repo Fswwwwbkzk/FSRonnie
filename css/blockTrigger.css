@@ -3,6 +3,11 @@
   width: 100%;
   height: 300px;
 }
+@media screen and (max-width: 768px) {
+  .blocks-container {
+    height: 120px;
+  }
+}
 .blocks-container.top {
   top: 0;
   left: 50%;
@@ -25,6 +30,11 @@
   height: 100px;
   overflow: hidden;
   display: flex;
+}
+@media screen and (max-width: 768px) {
+  .blocks-row {
+    height: 40px;
+  }
 }
 
 .block {
